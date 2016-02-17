@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cbags</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="page-header">
+        <h2 class="text-center">CBags</h2>
+    </div>
+    <div class="row">
+        <div class="col-sm-9">
+            <input class="form-control" type="text" id="circleWidth" placeholder="Enter Circle Width">
+        </div>
+        <div class="col-sm-3">
+            <button id="figureLengthBtn" class="btn btn-info" onclick="lengthFromDiameter()">Figure Length</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="bodyLength" placeholder="Enter Body Length">
+        </div>
+        <div class="col-sm-3">
+            <button id="figureCircleWidthBtn" class="btn btn-info" onclick="diameterFromLength()">Figure
+                Circle Width
+            </button>
+        </div>
+    </div>
+
+    <div id="dispArea" class="well well-lg"></div>
+
+    <!--connect javascript-->
+    <script src="js/cbags.js"></script>
+</div>
+</body>
+</html>
