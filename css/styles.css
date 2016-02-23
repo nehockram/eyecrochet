@@ -1,0 +1,19 @@
+.greyback {
+    background-color: lightgrey;
+}
+
+.center {
+  text-align: center;
+}
+
+button {
+  /*    display: inline;*/
+  width: auto;
+  padding: 4px;
+}
+
+.big-display {
+  font-family: courier;
+  font-size: 40px;
+  margin: 10px;
+}
