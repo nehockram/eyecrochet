@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/responso.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Eye Crochet</title>
+    <script src="js/mydb.js"></script>
 </head>
 
 <body class="greyback">
@@ -16,28 +17,54 @@
         </div>
 
         <div class="row">
+            Start Date:
+            <input type="date" id="date" class="col-2">
+        </div>
+
+        <div class="row">
             <label for="title" class="col-4">Title:</label>
-            <input type="text" id="title" class="col-8">
+            <input type="text" id="title" class="col-4">
         </div>
 
         <div class="row">
-            <label for="yarn">Yarn (Brand):</label>
-            <input type="text" id="yarn">
+            <label for="yarn" class="col-3">Yarn (Brand):</label>
+            <input type="text" id="yarn" class="col-3">
 
-            <label for="weight">Yarn (Weight):</label>
-            <input type="text" id="weight">
+            <label for="weight" class="col-3">Yarn (Weight):</label>
+            <select id="yarnweight" class="col-1">
+                <option value="worsted">Worsted</option>
+                <option value="baby">Baby</option>
+                <option value="chunky">Chunky</option>
+            </select>
+
+            <label for="yarncolor" class="col-3">Yarn (Color):</label>
+            <input type="text" id="yarncolor" class="col-3">
+
         </div>
 
         <div class="row">
-            <label for="hook">Hook:</label>
-            <input type="text" id="hook">
+            <label for="hook" class="col-2">Hook:</label>
+            <input type="text" id="hook" class="col-1">
         </div>
 
         <div class="row">
-            <button>Add Project</button>
-            <button>Bag Math</button>
+            End Date:
+            <input type="date" id="enddate" class="col-2">
         </div>
+
+        <div>
+            <label for="notes" class="col-2">Notes:</label>
+            <textarea id="notes" rows="10"></textarea>
+        </div>
+
+        <div class="row">
+            <button onclick="addProject()">Add Project</button>
+            <button onclick="window.open('cbags.html')">Bag Math</button>
+        </div>
+
     </div>
+
+    <script src="js/eyecrochet.js"></script>
 </body>
 
 </html>

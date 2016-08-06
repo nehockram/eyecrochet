@@ -17,3 +17,4 @@ function diameterFromLength() {
     disp.innerHTML = "Crochet circle for " + (getText.value / 3.14).toPrecision(3) + " inches.";
     getText.value = "";
 }
+

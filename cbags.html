@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Cbags</title>
 
@@ -11,34 +12,37 @@
 </head>
 
 <body class="greyback">
-<div class="container-fluid">
-    <div class="page-header">
-        <h2 class="center big-display">CBags</h2>
-    </div>
-    <div class="row">
-        <div class="col-sm-9">
-            <input class="form-control" type="text" id="circleWidth" placeholder="Enter Circle Width">
+    <div class="container-fluid">
+        <div class="page-header">
+            <h2 class="center big-display">CBags</h2>
         </div>
-        <div class="col-sm-3">
-            <button id="figureLengthBtn" class="btn btn-info" onclick="lengthFromDiameter()">Figure Length</button>
+        <div class="row">
+            <div class="col-sm-9">
+                <input class="form-control" type="text" id="circleWidth" placeholder="Enter Circle Width">
+            </div>
+            <div class="col-sm-3">
+                <button id="figureLengthBtn" class="btn btn-info" onclick="lengthFromDiameter()">Figure Length</button>
+            </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col-sm-9">
-            <input type="text" class="form-control" id="bodyLength" placeholder="Enter Body Length">
+        <div class="row">
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="bodyLength" placeholder="Enter Body Length">
+            </div>
+            <div class="col-sm-3">
+                <button id="figureCircleWidthBtn" class="btn btn-info" onclick="diameterFromLength()">Figure Circle Width
+                </button>
+            </div>
+            <div>
+                <input type="button" value="Home" onclick="window.open('eyecrochet.html')" />
+            </div>
         </div>
-        <div class="col-sm-3">
-            <button id="figureCircleWidthBtn" class="btn btn-info" onclick="diameterFromLength()">Figure
-                Circle Width
-            </button>
-        </div>
+
+        <div id="dispArea" class="well well-lg"></div>
+
+        <!--connect javascript-->
+        <script src="js/cbags.js"></script>
     </div>
-
-    <div id="dispArea" class="well well-lg"></div>
-
-    <!--connect javascript-->
-    <script src="js/cbags.js"></script>
-</div>
 </body>
+
 </html>

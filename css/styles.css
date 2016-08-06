@@ -1,19 +1,27 @@
+body {
+    padding: 10px;
+}
 .greyback {
-    background-color: lightgrey;
+    background-color: lightskyblue;
 }
-
 .center {
-  text-align: center;
+    text-align: center;
 }
-
 button {
-  /*    display: inline;*/
-  width: auto;
-  padding: 4px;
+    /*    display: inline;*/
+    width: auto;
+    padding: 4px;
 }
-
 .big-display {
-  font-family: courier;
-  font-size: 40px;
-  margin: 10px;
+    font-family: cursive;
+    font-size: 40px;
+    margin: 10px;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.photobox {
+    /*    display: block;*/
+    float: left;
 }
